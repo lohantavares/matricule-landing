@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/auth",
+      "destination": "https://app.matriculemaiscrm.com.br/auth",
+      "permanent": false
+    },
+    {
+      "source": "/auth/:path*",
+      "destination": "https://app.matriculemaiscrm.com.br/auth/:path*",
+      "permanent": false
+    }
+  ]
+}
