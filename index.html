@@ -90,13 +90,8 @@
 
   .btn-nav:hover { background: var(--teal-dark) !important; }
 
-  .nav-mobile-actions {
-    display: none;
-    align-items: center;
-    gap: 16px;
-  }
-
   .login-nav-mobile {
+    display: none;
     font-size: 14px;
     font-weight: 500;
     color: var(--slate-mid);
@@ -105,22 +100,6 @@
   }
 
   .login-nav-mobile:hover { color: var(--teal); }
-
-  .btn-nav-mobile {
-    display: flex;
-    align-items: center;
-    background: var(--teal);
-    color: white;
-    font-family: var(--font-body);
-    font-size: 14px;
-    font-weight: 600;
-    padding: 9px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background 0.2s;
-  }
-
-  .btn-nav-mobile:hover { background: var(--teal-dark); }
 
   /* HERO */
   .hero {
@@ -990,7 +969,7 @@
     .problems-grid { grid-template-columns: 1fr; }
     .stats-bar-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
     nav .nav-links { display: none; }
-    .nav-mobile-actions { display: flex; }
+    .login-nav-mobile { display: block; }
   }
 
   @media (max-width: 600px) {
@@ -1026,10 +1005,7 @@
     <li><a href="https://matriculemaiscrm.com.br/auth" style="font-size:14px;font-weight:500;color:#334155;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#0D9488'" onmouseout="this.style.color='#334155'">Login</a></li>
     <li><a href="https://matriculemaiscrm.com.br/auth?tab=signup" class="btn-nav">Começar grátis</a></li>
   </ul>
-  <div class="nav-mobile-actions">
-    <a href="https://matriculemaiscrm.com.br/auth" class="login-nav-mobile">Login</a>
-    <a href="https://matriculemaiscrm.com.br/auth?tab=signup" class="btn-nav-mobile">Começar grátis</a>
-  </div>
+  <a href="https://matriculemaiscrm.com.br/auth" class="login-nav-mobile">Login</a>
 </nav>
 
 <!-- HERO -->
