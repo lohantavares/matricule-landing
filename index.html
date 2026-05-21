@@ -261,7 +261,7 @@
   }
 
   .mock-sidebar {
-    background: #fafafa;
+    background: white;
     border-right: 1px solid var(--border);
     padding: 12px 0;
   }
@@ -384,17 +384,28 @@
   .mock-lead-name { font-weight: 500; color: var(--slate); }
 
   .mock-badge {
-    display: inline-block;
-    padding: 2px 7px;
-    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     font-size: 9px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
-  .mock-badge.agendado { background: #dbeafe; color: #1d4ed8; }
-  .mock-badge.interagindo { background: #d1fae5; color: #065f46; }
-  .mock-badge.matricula { background: #ccfbf1; color: #0f766e; }
-  .mock-badge.sem { background: #f1f5f9; color: #64748b; }
+  .mock-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .mock-badge.agendado { color: #3b82f6; }
+  .mock-badge.agendado::before { background: #3b82f6; }
+  .mock-badge.interagindo { color: #0D9488; }
+  .mock-badge.interagindo::before { background: #0D9488; }
+  .mock-badge.matricula { color: #059669; }
+  .mock-badge.matricula::before { background: #059669; }
+  .mock-badge.sem { color: #94a3b8; }
+  .mock-badge.sem::before { background: #94a3b8; }
 
   .mock-phone { color: var(--teal); font-size: 9px; }
 
@@ -1047,6 +1058,7 @@
             <div class="mock-nav-item"><div class="mock-nav-dot"></div> Leads</div>
             <div class="mock-nav-item"><div class="mock-nav-dot"></div> Pipeline</div>
             <div class="mock-nav-item"><div class="mock-nav-dot"></div> Modo Foco</div>
+            <div class="mock-nav-item"><div class="mock-nav-dot"></div> Agenda</div>
             <div class="mock-nav-item"><div class="mock-nav-dot"></div> Follow-ups</div>
             <div class="mock-nav-item"><div class="mock-nav-dot"></div> Performance</div>
           </div>
