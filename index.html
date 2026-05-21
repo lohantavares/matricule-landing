@@ -6,7 +6,7 @@
 <meta name="google-site-verification" content="wK8r8gdJlb12t_kEW51ip0tUVOX3inq02e0flSc06rM" />
 <title>Matricule+ — CRM para Escolas e Instituições de Ensino</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -52,15 +52,15 @@
   }
 
   .nav-logo {
-    font-family: var(--font-display);
-    font-weight: 700;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 600;
     font-size: 20px;
-    color: var(--teal);
+    color: var(--slate);
     text-decoration: none;
     letter-spacing: -0.5px;
   }
 
-  .nav-logo span { color: var(--slate); }
+  .nav-logo span { color: var(--teal); font-weight: 700; }
 
   .nav-links {
     display: flex;
@@ -268,11 +268,14 @@
 
   .mock-logo {
     padding: 8px 16px 16px;
-    font-family: var(--font-display);
-    font-weight: 700;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 600;
     font-size: 13px;
-    color: var(--teal);
+    color: var(--slate);
+    letter-spacing: -0.3px;
   }
+
+  .mock-logo span { color: var(--teal); font-weight: 700; }
 
   .mock-nav-item {
     padding: 7px 16px;
@@ -945,12 +948,15 @@
   }
 
   .footer-logo {
-    font-family: var(--font-display);
-    font-weight: 700;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 600;
     font-size: 18px;
-    color: var(--teal);
+    color: #f1f5f9;
     text-decoration: none;
+    letter-spacing: -0.5px;
   }
+
+  .footer-logo span { color: #14b8a6; font-weight: 700; }
 
   .footer-copy {
     font-size: 13px;
@@ -995,9 +1001,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">
-    <img src="/logo.png" alt="Matricule+" style="height: 32px; width: auto;" />
-  </a>
+  <a href="#" class="nav-logo">Matricule<span>+</span></a>
   <ul class="nav-links">
     <li><a href="#funcionalidades">Funcionalidades</a></li>
     <li><a href="#como-funciona">Como funciona</a></li>
@@ -1038,7 +1042,7 @@
         </div>
         <div class="mock-body">
           <div class="mock-sidebar">
-            <div class="mock-logo">matricule+</div>
+            <div class="mock-logo">Matricule<span>+</span></div>
             <div class="mock-nav-item active"><div class="mock-nav-dot"></div> Dashboard</div>
             <div class="mock-nav-item"><div class="mock-nav-dot"></div> Leads</div>
             <div class="mock-nav-item"><div class="mock-nav-dot"></div> Pipeline</div>
@@ -1392,9 +1396,7 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <a href="#" class="footer-logo">
-      <img src="/logo.png" alt="Matricule+" style="height: 28px; width: auto; filter: brightness(0) invert(1);" />
-    </a>
+    <a href="#" class="footer-logo">Matricule<span>+</span></a>
     <p class="footer-copy">© 2026 Matricule+ · CRM para Escolas e Instituições de Ensino · Curitiba, PR · <a href="/privacy" style="color:rgba(255,255,255,0.4);text-decoration:none;">Privacidade</a> · <a href="/terms" style="color:rgba(255,255,255,0.4);text-decoration:none;">Termos</a></p>
   </div>
 </footer>
