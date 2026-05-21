@@ -16,7 +16,7 @@
     { "src": "/terms", "dest": "/terms.html" },
     { "src": "/favicon.ico", "dest": "/favicon.ico" },
     { "src": "/manifest.json", "dest": "/manifest.json" },
-    { "src": "/logo.png", "dest": "/logo.png" },
+    { "src": "/matriculemaislogooficial.svg", "dest": "/matriculemaislogooficial.svg" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
