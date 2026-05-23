@@ -17,6 +17,7 @@
     { "src": "/favicon.ico", "dest": "/favicon.ico" },
     { "src": "/manifest.json", "dest": "/manifest.json" },
     { "src": "/matriculemaislogooficial.svg", "dest": "/matriculemaislogooficial.svg" },
+    { "src": "/matricule%2B%20dark.png", "dest": "/matricule%2B%20dark.png" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
