@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="wK8r8gdJlb12t_kEW51ip0tUVOX3inq02e0flSc06rM" />
-<title>Matricule+ — CRM para Escolas e Instituições de Ensino</title>
+<title>Matricule+ — CRM de matrículas para professores e escolas de idiomas</title>
+<meta name="description" content="Organize seus leads, acompanhe o funil e aumente suas matrículas. CRM feito para professores autônomos e escolas de idiomas. 30 dias grátis." />
+<meta name="keywords" content="CRM matrículas, escola de idiomas, professor de inglês, gestão comercial, leads, pipeline matrículas" />
 <link rel="icon" href="/favicon.ico" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Sora:wght@400;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -800,125 +802,48 @@
     box-shadow: 0 8px 24px rgba(13,148,136,0.3);
   }
 
-  /* PROBLEMS */
-  .problems-section { background: #fafafa; }
+  /* AUDIENCE */
+  .audience-section { background: #fafafa; }
 
-  .problems-grid {
+  .audience-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
     margin-top: 60px;
-    align-items: center;
   }
 
-  .problem-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .problem-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 20px;
+  .audience-card {
     background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+  }
+
+  .audience-icon {
+    width: 48px; height: 48px;
+    background: var(--teal-light);
     border-radius: 12px;
-    border: 1px solid var(--border);
-  }
-
-  .problem-icon {
-    font-size: 22px;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
-
-  .problem-text strong {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--slate);
-    margin-bottom: 3px;
-  }
-
-  .problem-text span {
-    font-size: 13px;
-    color: var(--slate-light);
-    font-weight: 300;
-  }
-
-  .solution-visual {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 28px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.05);
-  }
-
-  .solution-title {
-    font-family: var(--font-display);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--slate);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 
-  .funnel-bar {
-    margin-bottom: 10px;
-  }
-
-  .funnel-label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-
-  .funnel-label-text { color: var(--slate-mid); font-weight: 500; }
-  .funnel-label-num { color: var(--teal); font-weight: 700; font-family: var(--font-display); }
-
-  .funnel-track {
-    height: 8px;
-    background: var(--teal-light);
-    border-radius: 100px;
-    overflow: hidden;
-  }
-
-  .funnel-fill {
-    height: 100%;
-    background: var(--teal);
-    border-radius: 100px;
-    transition: width 1s ease;
-  }
-
-  .solution-metrics {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 20px;
-  }
-
-  .solution-metric {
-    background: var(--teal-light);
-    border-radius: 10px;
-    padding: 14px;
-    text-align: center;
-  }
-
-  .solution-metric-num {
+  .audience-title {
     font-family: var(--font-display);
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--teal-dark);
-    line-height: 1;
-    margin-bottom: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--slate);
+    margin-bottom: 10px;
+    letter-spacing: -0.3px;
   }
 
-  .solution-metric-label {
-    font-size: 11px;
-    color: var(--teal-dark);
-    opacity: 0.7;
-    font-weight: 500;
+  .audience-desc {
+    font-size: 14px;
+    color: var(--slate-light);
+    line-height: 1.7;
+    font-weight: 300;
   }
 
   /* CTA FINAL */
@@ -974,7 +899,7 @@
     .steps-grid::before { display: none; }
     .pricing-grid { grid-template-columns: 1fr; }
     .pricing-card.featured { transform: none; }
-    .problems-grid { grid-template-columns: 1fr; }
+    .audience-grid { grid-template-columns: 1fr; }
     .stats-bar-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
     nav .nav-links { display: none; }
     .login-nav-mobile { display: block; }
@@ -1020,9 +945,9 @@
 <section style="padding: 0;">
   <div class="hero">
     <div class="hero-content">
-      <div class="hero-badge">CRM para Escolas e Cursos</div>
-      <h1>Pare de perder matrículas por falta de <em>controle comercial</em></h1>
-      <p>O Matricule+ organiza seus leads, acompanha o funil de vendas e aumenta a conversão de matrículas — com gestão completa da performance da sua equipe.</p>
+      <div class="hero-badge">CRM PARA IDIOMAS</div>
+      <h1>Pare de perder alunos por falta de <em>controle comercial</em></h1>
+      <p>O Matricule+ organiza seus leads, acompanha o funil de matrículas e aumenta sua conversão — feito para professores autônomos e escolas de idiomas.</p>
       <div class="hero-cta">
         <a href="https://app.matriculemaiscrm.com.br/auth?tab=signup" class="btn-primary">
           Começar 30 dias grátis →
@@ -1030,7 +955,7 @@
         <a href="#como-funciona" class="btn-secondary">Ver como funciona</a>
       </div>
       <p class="hero-trial">
-        <strong>30 dias grátis</strong> · Cancele quando quiser
+        <strong>30 dias grátis</strong> · Cancele quando quiser · Sem cartão de crédito
       </p>
     </div>
 
@@ -1141,85 +1066,27 @@
   </div>
 </div>
 
-<!-- PROBLEMS -->
-<section class="problems-section" id="funcionalidades">
+<!-- AUDIENCE -->
+<section class="audience-section" id="funcionalidades">
   <div class="section-inner">
-    <div class="section-badge">O Problema</div>
-    <h2 class="section-title">Sua escola perde matrículas todo dia sem perceber</h2>
-    <p class="section-subtitle">Leads sem acompanhamento, equipe sem direção e nenhuma visibilidade sobre o que está acontecendo no comercial.</p>
+    <div class="section-badge">Para quem é</div>
+    <h2 class="section-title">Para quem é o Matricule+?</h2>
 
-    <div class="problems-grid">
-      <div class="problem-list">
-        <div class="problem-item">
-          <div class="problem-icon">📱</div>
-          <div class="problem-text">
-            <strong>WhatsApp como único CRM</strong>
-            <span>Conversas se perdem, leads esquecem e ninguém sabe em qual etapa cada aluno está.</span>
-          </div>
-        </div>
-        <div class="problem-item">
-          <div class="problem-icon">📊</div>
-          <div class="problem-text">
-            <strong>Sem visibilidade do funil</strong>
-            <span>Você não sabe quantos leads estão prontos para matricular, quantos desistiram ou quantos precisam de follow-up.</span>
-          </div>
-        </div>
-        <div class="problem-item">
-          <div class="problem-icon">👥</div>
-          <div class="problem-text">
-            <strong>Equipe sem gestão clara</strong>
-            <span>Impossível saber quem está performando, quem precisa de apoio e quais leads foram trabalhados.</span>
-          </div>
-        </div>
-        <div class="problem-item">
-          <div class="problem-icon">🗓️</div>
-          <div class="problem-text">
-            <strong>Agendamentos perdidos</strong>
-            <span>Entrevistas sem acompanhamento, bolos sem follow-up e oportunidades que simplesmente somem.</span>
-          </div>
-        </div>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <div class="audience-icon">👤</div>
+        <div class="audience-title">Professor autônomo</div>
+        <div class="audience-desc">Você dá aulas particulares de inglês ou outro idioma e perde contatos porque não tem onde organizar seus leads e seguir acompanhando cada um.</div>
       </div>
-
-      <div class="solution-visual">
-        <div class="solution-title">Funil de conversão · Este mês</div>
-        <div class="funnel-bar">
-          <div class="funnel-label">
-            <span class="funnel-label-text">Leads recebidos</span>
-            <span class="funnel-label-num">568</span>
-          </div>
-          <div class="funnel-track"><div class="funnel-fill" style="width:100%"></div></div>
-        </div>
-        <div class="funnel-bar">
-          <div class="funnel-label">
-            <span class="funnel-label-text">Leads trabalhados</span>
-            <span class="funnel-label-num">396</span>
-          </div>
-          <div class="funnel-track"><div class="funnel-fill" style="width:70%"></div></div>
-        </div>
-        <div class="funnel-bar">
-          <div class="funnel-label">
-            <span class="funnel-label-text">Entrevistas agendadas</span>
-            <span class="funnel-label-num">76</span>
-          </div>
-          <div class="funnel-track"><div class="funnel-fill" style="width:25%"></div></div>
-        </div>
-        <div class="funnel-bar">
-          <div class="funnel-label">
-            <span class="funnel-label-text">Matrículas realizadas</span>
-            <span class="funnel-label-num">22</span>
-          </div>
-          <div class="funnel-track"><div class="funnel-fill" style="width:8%"></div></div>
-        </div>
-        <div class="solution-metrics">
-          <div class="solution-metric">
-            <div class="solution-metric-num">29%</div>
-            <div class="solution-metric-label">Taxa de matrícula</div>
-          </div>
-          <div class="solution-metric">
-            <div class="solution-metric-num">19%</div>
-            <div class="solution-metric-label">Taxa de agendamento</div>
-          </div>
-        </div>
+      <div class="audience-card">
+        <div class="audience-icon">👥</div>
+        <div class="audience-title">Coordenador de matrículas</div>
+        <div class="audience-desc">Você gerencia uma equipe de consultores em uma escola de idiomas e precisa de visibilidade sobre o funil, os agendamentos e a performance de cada vendedor.</div>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon">🏫</div>
+        <div class="audience-title">Dono de escola independente</div>
+        <div class="audience-desc">Você tem uma escola própria e quer profissionalizar o processo comercial — do primeiro contato até a assinatura do contrato.</div>
       </div>
     </div>
   </div>
@@ -1229,54 +1096,39 @@
 <section style="background: white; border-top: 1px solid var(--border);">
   <div class="section-inner">
     <div class="section-badge">Funcionalidades</div>
-    <h2 class="section-title">Tudo que sua operação comercial precisa</h2>
-    <p class="section-subtitle">Do primeiro contato à matrícula — com controle total e visibilidade em tempo real.</p>
+    <h2 class="section-title">Tudo que você precisa para converter mais matrículas</h2>
+    <p class="section-subtitle">Do primeiro contato à matrícula assinada — com controle total e visibilidade em tempo real.</p>
 
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon">🎯</div>
-        <div class="feature-title">Modo Foco (Sprint)</div>
-        <div class="feature-desc">Processe dezenas de leads em minutos com o modo sprint. Ligue, mande WhatsApp e registre o resultado sem sair da tela.</div>
+        <div class="feature-icon">👥</div>
+        <div class="feature-title">Gestão de Leads</div>
+        <div class="feature-desc">Organize todos os seus contatos em um só lugar, com status, origem, histórico e observações.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📋</div>
-        <div class="feature-title">Pipeline Kanban</div>
-        <div class="feature-desc">Visualize todos os leads em cada etapa do funil. Arraste e solte para atualizar o status com um clique.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📊</div>
-        <div class="feature-title">Dashboard de Performance</div>
-        <div class="feature-desc">Métricas em tempo real: taxa de agendamento, matrículas, performance por vendedor e evolução histórica.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">🔔</div>
-        <div class="feature-title">Follow-ups Automáticos</div>
-        <div class="feature-desc">Nunca esqueça um lead. Configure lembretes e a plataforma te avisa quando é hora de retornar o contato.</div>
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Modo Foco</div>
+        <div class="feature-desc">Sprint de atendimento: trabalhe lead por lead sem distração, com WhatsApp e agendamento integrados.</div>
       </div>
       <div class="feature-card">
         <div class="feature-icon">📅</div>
         <div class="feature-title">Agenda Integrada</div>
-        <div class="feature-desc">Agende entrevistas direto pelo Google Calendar. Envie links de Meet ou confirme presenciais com um clique.</div>
+        <div class="feature-desc">Agende entrevistas e sincronize com o Google Calendar. Veja quem confirmou, desmarcou ou deu bolo.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">👥</div>
-        <div class="feature-title">Gestão de Equipe</div>
-        <div class="feature-desc">Veja a performance individual de cada vendedor, distribua leads e acompanhe quem está atingindo as metas.</div>
+        <div class="feature-icon">📊</div>
+        <div class="feature-title">Dashboard Completo</div>
+        <div class="feature-desc">Acompanhe seu funil em tempo real: agendamentos, matrículas, taxa de conversão e problemas do funil.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">📥</div>
-        <div class="feature-title">Importação em Massa</div>
-        <div class="feature-desc">Importe contatos do WhatsApp (VCF), planilhas CSV ou Excel. Detecta duplicatas automaticamente.</div>
+        <div class="feature-icon">🔔</div>
+        <div class="feature-title">Follow-ups e Lembretes</div>
+        <div class="feature-desc">Nunca esqueça de retornar um lead. Configure lembretes e follow-ups automáticos com notificação no celular.</div>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🔍</div>
-        <div class="feature-title">Busca e Filtros Avançados</div>
-        <div class="feature-desc">Encontre qualquer lead por nome, telefone, origem ou status. Filtre e segmente com precisão.</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">📱</div>
-        <div class="feature-title">Funciona no Celular</div>
-        <div class="feature-desc">Use como app no iPhone e Android. Instale direto do navegador, sem precisar da App Store.</div>
+        <div class="feature-icon">🎯</div>
+        <div class="feature-title">Metas Comerciais</div>
+        <div class="feature-desc">Defina sua meta mensal de matrículas e veja o ritmo necessário de agendamentos para bater o objetivo.</div>
       </div>
     </div>
   </div>
@@ -1286,29 +1138,29 @@
 <section class="how-section" id="como-funciona">
   <div class="section-inner">
     <div class="section-badge">Como funciona</div>
-    <h2 class="section-title">Em minutos você já está operando</h2>
-    <p class="section-subtitle">Sem treinamentos longos, sem configurações complexas. Sua escola começa a ganhar controle comercial no mesmo dia.</p>
+    <h2 class="section-title">Do primeiro contato à matrícula assinada</h2>
+    <p class="section-subtitle">Sem treinamentos longos, sem configurações complexas. Você começa a operar no mesmo dia.</p>
 
     <div class="steps-grid">
       <div class="step">
         <div class="step-num">1</div>
-        <div class="step-title">Crie sua conta</div>
-        <div class="step-desc">Cadastre sua escola com login Google. Em 2 minutos você já tem acesso completo.</div>
+        <div class="step-title">Cadastre o lead</div>
+        <div class="step-desc">Recebeu um contato? Cadastre em segundos via formulário, importação de contatos ou pesquisa cultural.</div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <div class="step-title">Importe seus leads</div>
-        <div class="step-desc">Traga seus contatos do WhatsApp, planilhas ou adicione manualmente. Sem perder nenhum dado.</div>
+        <div class="step-title">Acompanhe o funil</div>
+        <div class="step-desc">Mova o lead pelo pipeline: Sem Contato → Qualificação → Agendado → Matrícula.</div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <div class="step-title">Trabalhe no Modo Foco</div>
-        <div class="step-desc">Processe leads em alta velocidade. Ligue, envie WhatsApp e registre resultados em segundos.</div>
+        <div class="step-title">Use o Modo Foco</div>
+        <div class="step-desc">Trabalhe sua fila de leads em sprints cronometrados. WhatsApp, ligação e agendamento em um clique.</div>
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <div class="step-title">Acompanhe os resultados</div>
-        <div class="step-desc">Veja em tempo real a taxa de conversão, agendamentos e matrículas da sua equipe.</div>
+        <div class="step-title">Bata sua meta</div>
+        <div class="step-desc">Acompanhe seu ritmo diário, veja a projeção do mês e saiba exatamente quantos agendamentos precisa fazer.</div>
       </div>
     </div>
   </div>
@@ -1318,13 +1170,13 @@
 <section id="precos" style="background: #fafafa;">
   <div class="section-inner">
     <div class="section-badge">Planos</div>
-    <h2 class="section-title">Simples, transparente e sem surpresas</h2>
+    <h2 class="section-title">Planos simples, sem surpresas</h2>
     <p class="section-subtitle">Todos os planos incluem 30 dias grátis. Cancele quando quiser.</p>
 
     <div class="pricing-grid">
       <div class="pricing-card">
         <div class="pricing-plan">Starter</div>
-        <div class="pricing-desc">Para consultores e pequenas operações</div>
+        <div class="pricing-desc">Para professores autônomos</div>
         <div class="pricing-price">
           <span class="pricing-currency">R$</span>
           <span class="pricing-amount">39</span>
@@ -1345,7 +1197,7 @@
       <div class="pricing-card featured">
         <div class="pricing-badge">Mais popular</div>
         <div class="pricing-plan">Team</div>
-        <div class="pricing-desc">Para escolas com equipe comercial</div>
+        <div class="pricing-desc">Para escolas pequenas</div>
         <div class="pricing-price">
           <span class="pricing-currency">R$</span>
           <span class="pricing-amount">149</span>
@@ -1365,7 +1217,7 @@
 
       <div class="pricing-card">
         <div class="pricing-plan">Scale</div>
-        <div class="pricing-desc">Para operações de maior porte</div>
+        <div class="pricing-desc">Para escolas em crescimento</div>
         <div class="pricing-price">
           <span class="pricing-currency">R$</span>
           <span class="pricing-amount">249</span>
@@ -1389,10 +1241,10 @@
 <!-- CTA FINAL -->
 <section class="cta-section">
   <div class="section-inner">
-    <h2 class="section-title">Pronto para matricular mais?</h2>
-    <p class="section-subtitle">Junte-se às escolas que já usam o Matricule+ para transformar leads em matrículas com mais previsibilidade e controle.</p>
+    <h2 class="section-title">Comece hoje. Seus próximos alunos estão esperando.</h2>
+    <p class="section-subtitle">30 dias grátis, sem cartão de crédito.</p>
     <a href="https://app.matriculemaiscrm.com.br/auth?tab=signup" class="btn-primary" style="font-size: 16px; padding: 16px 36px;">
-      Começar 30 dias grátis →
+      Criar conta grátis →
     </a>
     <p class="cta-trial-note">Configure em minutos · Cancele quando quiser</p>
   </div>
@@ -1404,7 +1256,7 @@
     <a href="#" class="footer-logo">
       <img src="/matricule%2B%20dark.png" alt="Matricule+" height="24" />
     </a>
-    <p class="footer-copy">© 2026 Matricule+ · CRM para Escolas e Instituições de Ensino · Curitiba, PR · <a href="/privacy" style="color:rgba(255,255,255,0.4);text-decoration:none;">Privacidade</a> · <a href="/terms" style="color:rgba(255,255,255,0.4);text-decoration:none;">Termos</a></p>
+    <p class="footer-copy">© 2026 Matricule+ · CRM de matrículas para professores e escolas de idiomas · <a href="#funcionalidades" style="color:rgba(255,255,255,0.4);text-decoration:none;">Funcionalidades</a> · <a href="#como-funciona" style="color:rgba(255,255,255,0.4);text-decoration:none;">Como funciona</a> · <a href="#precos" style="color:rgba(255,255,255,0.4);text-decoration:none;">Preços</a> · <a href="https://app.matriculemaiscrm.com.br/auth" style="color:rgba(255,255,255,0.4);text-decoration:none;">Login</a> · <a href="/privacy" style="color:rgba(255,255,255,0.4);text-decoration:none;">Privacidade</a> · <a href="/terms" style="color:rgba(255,255,255,0.4);text-decoration:none;">Termos</a></p>
   </div>
 </footer>
 
